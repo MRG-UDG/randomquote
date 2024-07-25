@@ -1,0 +1,10 @@
+plugin.tx_randomquote {
+    view {
+        templateRootPaths.0 = EXT:randomquote/Resources/Private/Templates/
+        partialRootPaths.0 = EXT:randomquote/Resources/Private/Partials/
+        layoutRootPaths.0 = EXT:randomquote/Resources/Private/Layouts/
+    }
+    persistence {
+        storagePid = {$plugin.tx_randomquote.persistence.storagePid}
+    }
+}

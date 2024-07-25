@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+    plugins {
+        elements {
+            randomquote_quote {
+                iconIdentifier = ext-randomquote-icon
+                title = Random Quote
+                description = Displays a random quote
+                tt_content_defValues {
+                    CType = list
+                    list_type = randomquote_quote
+                }
+            }
+        }
+        show := addToList(randomquote_quote)
+    }
+}

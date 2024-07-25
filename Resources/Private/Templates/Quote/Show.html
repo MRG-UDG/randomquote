@@ -1,0 +1,11 @@
+<f:if condition="{quote}">
+    <blockquote>
+        <p>{quote.quote}</p>
+        <f:if condition="{quote.author}">
+            <cite>{quote.author}</cite>
+        </f:if>
+    </blockquote>
+    <f:if condition="{quote.image}">
+        <f:image image="{quote.image}" alt="{quote.author}" width="200c" height="200c" />
+    </f:if>
+</f:if>

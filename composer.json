@@ -1,0 +1,28 @@
+{
+  "name": "mrg/randomquote",
+  "type": "typo3-cms-extension",
+  "description": "Random Quote Extension",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Marko Röper-Grewe",
+      "email": "marko.roeper-grewe@udg.de",
+      "homepage": "https://www.udg.de/de/",
+      "role": "Developer",
+      "company": "PIA / UDG"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mrg\\Randomquote\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "randomquote"
+    }
+  }
+}

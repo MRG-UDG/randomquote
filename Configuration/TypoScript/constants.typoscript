@@ -1,0 +1,6 @@
+plugin.tx_randomquote {
+    settings {
+        # Default storage PID for quotes
+        storagePid =
+    }
+}
