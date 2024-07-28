@@ -2,14 +2,14 @@
 defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Mrg.Randomquote',
+    'MRG.Randomquote',
     'Quote',
     [
-        \Mrg\Randomquote\Controller\QuoteController::class => 'show'
+        \MRG\Randomquote\Controller\QuoteController::class => 'show'
     ],
     // non-cacheable actions
     [
-        \Mrg\Randomquote\Controller\QuoteController::class => 'show'
+        \MRG\Randomquote\Controller\QuoteController::class => 'show'
     ]
 );
 

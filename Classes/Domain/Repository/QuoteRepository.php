@@ -1,5 +1,5 @@
 <?php
-namespace Mrg\Randomquote\Domain\Repository;
+namespace MRG\Randomquote\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
@@ -17,7 +17,7 @@ class QuoteRepository extends Repository
      * Finds a random quote from the given UIDs
      *
      * @param array $uids
-     * @return \Mrg\Randomquote\Domain\Model\Quote|null
+     * @return \MRG\Randomquote\Domain\Model\Quote|null
      */
     public function findRandomByUids(array $uids)
     {

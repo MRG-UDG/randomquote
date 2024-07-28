@@ -1,5 +1,5 @@
 <?php
-namespace Mrg\Randomquote\Domain\Model;
+namespace MRG\Randomquote\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;

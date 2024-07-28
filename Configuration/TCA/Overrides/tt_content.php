@@ -1,7 +1,7 @@
 <?php
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Mrg.Randomquote',
+    'MRG.Randomquote',
     'Quote',
     'Random Quote'
 );

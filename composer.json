@@ -2,6 +2,7 @@
   "name": "mrg/randomquote",
   "type": "typo3-cms-extension",
   "description": "Random Quote Extension",
+  "version": "1.1.0",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -13,11 +14,11 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^10.4"
+    "typo3/cms-core": "^10.4 || ^11.5"
   },
   "autoload": {
     "psr-4": {
-      "Mrg\\Randomquote\\": "Classes/"
+      "MRG\\Randomquote\\": "Classes/"
     }
   },
   "extra": {

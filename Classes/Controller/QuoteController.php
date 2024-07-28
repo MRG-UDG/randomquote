@@ -1,8 +1,8 @@
 <?php
-namespace Mrg\Randomquote\Controller;
+namespace MRG\Randomquote\Controller;
 
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Mrg\Randomquote\Domain\Repository\QuoteRepository;
+use MRG\Randomquote\Domain\Repository\QuoteRepository;
 
 class QuoteController extends ActionController
 {
