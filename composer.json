@@ -2,15 +2,13 @@
   "name": "mrg/randomquote",
   "type": "typo3-cms-extension",
   "description": "Random Quote Extension",
-  "version": "1.1.0",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Marko Röper-Grewe",
       "email": "marko.roeper-grewe@udg.de",
       "homepage": "https://www.udg.de/de/",
-      "role": "Developer",
-      "company": "PIA / UDG"
+      "role": "Developer"
     }
   ],
   "require": {
