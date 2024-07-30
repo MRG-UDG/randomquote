@@ -8,3 +8,11 @@ plugin.tx_randomquote {
         storagePid = {$plugin.tx_randomquote.persistence.storagePid}
     }
 }
+
+plugin.tx_aichemist {
+    settings {
+        translateButtonTables {
+            tx_randomquote_domain_model_quote = quote,author
+        }
+    }
+}

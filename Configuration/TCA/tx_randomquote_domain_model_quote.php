@@ -14,7 +14,10 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'quote,author',
-        'iconfile' => 'EXT:randomquote/Resources/Public/Icons/Extension.svg'
+        'iconfile' => 'EXT:randomquote/Resources/Public/Icons/Extension.svg',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource'
     ],
     'types' => [
         '1' => [
