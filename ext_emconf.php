@@ -9,15 +9,13 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'PIA / UDG',
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
-    'version' => '1.2.0',
+    'version' => '1.3.0',
     'iconIdentifier' => 'ext-randomquote-icon',
     'constraints' => [
         'depends' => [
             'typo3' => '10.4.0-11.5.99',
         ],
         'conflicts' => [],
-        'suggests' => [
-            'randomquote' => '',
-        ],
+        'suggests' => [],
     ],
 ];
