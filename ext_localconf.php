@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'MRG.Randomquote',
+    'Randomquote',
     'Quote',
     [
         \MRG\Randomquote\Controller\QuoteController::class => 'show'
