@@ -19,11 +19,8 @@ class Quote extends AbstractEntity
     /**
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
-    protected $image = null;
+    protected $image;
 
-    /**
-     * @return string
-     */
     public function getQuote(): string
     {
         return $this->quote;
@@ -31,16 +28,12 @@ class Quote extends AbstractEntity
 
     /**
      * @param string $quote
-     * @return void
      */
     public function setQuote(string $quote): void
     {
         $this->quote = $quote;
     }
 
-    /**
-     * @return string
-     */
     public function getAuthor(): string
     {
         return $this->author;
@@ -48,16 +41,12 @@ class Quote extends AbstractEntity
 
     /**
      * @param string $author
-     * @return void
      */
     public function setAuthor(string $author): void
     {
         $this->author = $author;
     }
 
-    /**
-     * @return FileReference|null
-     */
     public function getImage(): ?FileReference
     {
         return $this->image;
@@ -65,7 +54,6 @@ class Quote extends AbstractEntity
 
     /**
      * @param FileReference|null $image
-     * @return void
      */
     public function setImage(?FileReference $image): void
     {

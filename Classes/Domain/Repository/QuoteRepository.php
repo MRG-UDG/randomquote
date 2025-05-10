@@ -25,8 +25,6 @@ class QuoteRepository extends Repository
         $query->matching(
             $query->in('uid', $uids)
         );
-
-        $result = $query->execute();
-        return $result;
+        return $query->execute();
     }
 }
