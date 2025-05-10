@@ -16,7 +16,6 @@ class QuoteRepository extends Repository
     /**
      * Finds a random quote from the given UIDs
      *
-     * @param array $uids
      * @return \MRG\Randomquote\Domain\Model\Quote|null
      */
     public function findRandomByUids(array $uids)

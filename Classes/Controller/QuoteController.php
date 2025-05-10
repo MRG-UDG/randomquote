@@ -11,7 +11,7 @@ class QuoteController extends ActionController
      */
     protected $quoteRepository;
 
-    public function injectQuoteRepository(QuoteRepository $quoteRepository)
+    public function __construct(\MRG\Randomquote\Domain\Repository\QuoteRepository $quoteRepository)
     {
         $this->quoteRepository = $quoteRepository;
     }
