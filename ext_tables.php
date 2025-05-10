@@ -1,15 +1,6 @@
 <?php
 defined('TYPO3') || die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    'tx_randomquote_domain_model_quote',
-    'EXT:randomquote/Resources/Private/Language/locallang_csh_tx_randomquote_domain_model_quote.xlf'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages(
-    'tx_randomquote_domain_model_quote'
-);
-
 // Add FlexForm configuration
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['randomquote_quote'] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
