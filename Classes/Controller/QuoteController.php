@@ -18,8 +18,8 @@ class QuoteController extends ActionController
 
     public function showAction()
     {
-        $selectedQuotes = explode(',', $this->settings['quotes']) ?? [];
-        if (!empty($selectedQuotes)) {
+        $selectedQuotes = explode(',', (string) $this->settings['quotes']) ?? [];
+        if ($selectedQuotes !== []) {
             $randomQuote = $this->quoteRepository->findRandomByUids($selectedQuotes);
             $randomQuote = $randomQuote->toArray();
             if (count($randomQuote) > 1) {
@@ -28,6 +28,7 @@ class QuoteController extends ActionController
             } else {
                 $randomQuote = $randomQuote[0];
             }
+
             $this->view->assign('quote', $randomQuote);
         }
     }
