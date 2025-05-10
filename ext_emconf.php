@@ -6,7 +6,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'plugin',
     'author' => 'Marko Röper-Grewe',
     'author_email' => 'marko.roeper-grewe@udg.de',
-    'author_company' => 'PIA / UDG',
+    'author_company' => 'MSQ / UDG',
     'state' => 'stable',
     'version' => '12.4.0',
     'iconIdentifier' => 'ext-randomquote-icon',
@@ -15,8 +15,6 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '11.5.99-12.4.99',
         ],
         'conflicts' => [],
-        'suggests' => [
-            'randomquote' => '',
-        ],
+        'suggests' => [],
     ],
 ];
