@@ -16,7 +16,7 @@ class QuoteController extends ActionController
         $this->quoteRepository = $quoteRepository;
     }
 
-    public function showAction()
+    public function showAction(): \Psr\Http\Message\ResponseInterface
     {
         $selectedQuotes = explode(',', (string) $this->settings['quotes']) ?? [];
         if ($selectedQuotes !== []) {
@@ -29,7 +29,9 @@ class QuoteController extends ActionController
                 $randomQuote = $randomQuote[0];
             }
 
-            $this->view->assign('quote', $randomQuote);
+            $this->view->assign('quote', $randomQuote ?? null);
         }
+
+        return $this->htmlResponse();
     }
 }
