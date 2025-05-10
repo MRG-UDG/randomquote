@@ -26,9 +26,6 @@ class Quote extends AbstractEntity
         return $this->quote;
     }
 
-    /**
-     * @param string $quote
-     */
     public function setQuote(string $quote): void
     {
         $this->quote = $quote;
@@ -39,9 +36,6 @@ class Quote extends AbstractEntity
         return $this->author;
     }
 
-    /**
-     * @param string $author
-     */
     public function setAuthor(string $author): void
     {
         $this->author = $author;
@@ -52,9 +46,6 @@ class Quote extends AbstractEntity
         return $this->image;
     }
 
-    /**
-     * @param FileReference|null $image
-     */
     public function setImage(?FileReference $image): void
     {
         $this->image = $image;

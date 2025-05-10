@@ -11,12 +11,12 @@ class QuoteController extends ActionController
      */
     protected $quoteRepository;
 
-    public function injectQuoteRepository(QuoteRepository $quoteRepository)
+    public function __construct(\MRG\Randomquote\Domain\Repository\QuoteRepository $quoteRepository)
     {
         $this->quoteRepository = $quoteRepository;
     }
 
-    public function showAction()
+    public function showAction(): \Psr\Http\Message\ResponseInterface
     {
         $selectedQuotes = explode(',', (string) $this->settings['quotes']) ?? [];
         if ($selectedQuotes !== []) {
@@ -29,7 +29,9 @@ class QuoteController extends ActionController
                 $randomQuote = $randomQuote[0];
             }
 
-            $this->view->assign('quote', $randomQuote);
+            $this->view->assign('quote', $randomQuote ?? null);
         }
+
+        return $this->htmlResponse();
     }
 }
