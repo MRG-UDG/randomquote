@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = [
     'iconIdentifier' => 'ext-randomquote-icon',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.99-12.4.99',
+            'typo3' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
