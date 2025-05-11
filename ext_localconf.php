@@ -10,7 +10,8 @@ defined('TYPO3') || die();
     // non-cacheable actions
     [
         \MRG\Randomquote\Controller\QuoteController::class => 'show'
-    ]
+    ],
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
