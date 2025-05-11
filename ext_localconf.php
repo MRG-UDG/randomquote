@@ -14,10 +14,6 @@ defined('TYPO3') || die();
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '@import "EXT:randomquote/Configuration/TSconfig/Page/Mod/Wizards/NewContentElement.tsconfig"'
-);
-
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
     \TYPO3\CMS\Core\Imaging\IconRegistry::class
 );
