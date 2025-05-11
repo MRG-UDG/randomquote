@@ -10,11 +10,8 @@ defined('TYPO3') || die();
     // non-cacheable actions
     [
         \MRG\Randomquote\Controller\QuoteController::class => 'show'
-    ]
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '@import "EXT:randomquote/Configuration/TSconfig/Page/Mod/Wizards/NewContentElement.tsconfig"'
+    ],
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
