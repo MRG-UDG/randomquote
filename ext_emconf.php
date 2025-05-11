@@ -6,17 +6,15 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'plugin',
     'author' => 'Marko Röper-Grewe',
     'author_email' => 'marko.roeper-grewe@udg.de',
-    'author_company' => 'PIA / UDG',
+    'author_company' => 'MSQ / UDG',
     'state' => 'stable',
-    'version' => '1.2.0',
+    'version' => '11.5.1',
     'iconIdentifier' => 'ext-randomquote-icon',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.5.99',
+            'typo3' => '11.5.99-11.99.99',
         ],
         'conflicts' => [],
-        'suggests' => [
-            'randomquote' => '',
-        ],
+        'suggests' => [],
     ],
 ];
